@@ -2,20 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom styles for Swiper pagination dots */
+.swiper-pagination-bullet {
+    background-color: #3adc34; /* Change this to your desired color for inactive dots */
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .swiper-pagination-bullet-active {
+    background-color: #e3342f; /* Change this to your desired color for active dots */
+  }
+  
+  /* Optional: Add hover effect */
+  .swiper-pagination-bullet:hover {
+    background-color: #6cb2eb; /* Change to your desired hover color */
+  }
+  
