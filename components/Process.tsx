@@ -55,7 +55,7 @@ const Process = () => {
         </div>
 
         {/* Center Image (Visible only on large screens) */}
-        <div className='hidden xl:flex items-center justify-center relative'>
+        <div className='hidden xl:flex items-center justify-center'>
           <Image src="/center-image.png" alt='Center Image' height={1000} width={1000} 
           className='absolute h-1/2 w-auto 2xl:h-2/3 2xl:w-auto'/>
         </div>
