@@ -59,7 +59,7 @@ const Ghostwriting = () => {
       </div>
       {/* right */}
 <div className='hidden lg:block h-[1800px] xl:h-[1500px] w-[800px] bg-gray-900 rounded-lg ml-10 relative overflow-hidden'>
-  <div className="flex flex-col animate-scroll-vertical h-[200%] space-y-[300px]">
+  <div className="flex flex-col animate-scroll-vertical h-[200%] space-y-[500px]">
     {slides.map((slide) => (
       <div
         key={slide.id}
