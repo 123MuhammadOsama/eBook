@@ -5,14 +5,15 @@ import { FaBookReader } from 'react-icons/fa'
 const Process = () => {
   return (
     <div className='px-4 md:px-10 xl:px20 py-20 space-y-10'>
-      <div className='w-full md:w-1/2 items-center justify-center'>
-        <h2 className='text-3xl md:text-5xl lg:text-6xl font-bold pb-5'>
-          Our <span className='text-red-500'>Unbeatable</span> Process
-        </h2>
-        <p className='text-lg md:text-xl lg:text-2xl'>
-          At The Nation Publishers, we&apos;re known for delivering top-notch content writing services. Now, you can dive into the perks of our ghostwriting service too! There are plenty of areas where you can tap into our expertise to get high-quality content. Let&apos;s get started!
-        </p>
-      </div>
+      <div className="w-full md:w-1/2 mx-auto text-center">
+  <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold pb-5">
+    Our <span className="text-red-500">Unbeatable</span> Process
+  </h2>
+  <p className="text-lg md:text-xl lg:text-2xl">
+    At The Nation Publishers, we&apos;re known for delivering top-notch content writing services. Now, you can dive into the perks of our ghostwriting service too! There are plenty of areas where you can tap into our expertise to get high-quality content. Let&apos;s get started!
+  </p>
+</div>
+
 
       {/* Grid layout for cards and image */}
       <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 px-0 md:px-3 xl:px-10'>
