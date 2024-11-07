@@ -25,12 +25,12 @@ const Testimonial = () => {
 
   return (
     <div className="bg-black w-full px-4 sm:px-10 md:px-20 py-10 relative">
-      <div className="bg-red-600 w-[90%] sm:w-[500px] text-white font-bold py-4 sm:py-4 text-center text-2xl
-       sm:text-2xl 2xl:text-4xl mx-auto sm:absolute sm:left-[100px] md:left-[200px] lg:left-[300px]
-        xl:left-[400px] 2xl:left-[800px] sm:top-[-40px] sm:-rotate-6 mb-8 sm:mb-0 2xl:py-8">
-        TESTIMONIALS
+      <div className="bg-red-600 w-[90%] sm:w-[500px] text-white font-bold py-4 sm:py-4 text-center
+         mx-auto sm:absolute sm:left-[100px] md:left-[200px] lg:left-[300px]
+        xl:left-[450px] 2xl:left-[900px] sm:top-[-40px] sm:-rotate-6 mb-8 sm:mb-0 2xl:py-8">
+        <h2 className='text-[26px] lg:text-[28px]'>TESTIMONIALS</h2>
       </div>
-      <p className="text-white text-center text-base sm:text-2xl px-4 pt-10 2xl:pt-20 sm:px-24 md:px-20 lg:px-40 2xl:px-[600px]">
+      <p className="text-white text-center text-base text-[14px] lg:text-[16px] px-4 pt-10 2xl:pt-20 sm:px-24 md:px-20 lg:px-40 2xl:px-[600px]">
         Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service
       </p>
 
@@ -73,14 +73,14 @@ const Testimonial = () => {
                     width={100}
                     className="w-16 h-16 sm:w-20 sm:h-20 rounded-full mb-2 sm:mb-3"
                   />
-                  <div className="text-yellow-500 flex text-3xl sm:text-5xl">
+                  <div className="text-yellow-500 flex text-[22px] lg:text-[24px]">
                     {Array(5)
                       .fill(0)
                       .map((_, i) => (
                         <span key={i}>★</span>
                       ))}
                   </div>
-                  <p className="text-center text-sm sm:text-xl mt-2 sm:mt-3 mb-4">
+                  <p className="text-center text-[14px] lg:text-[16px] mt-2 sm:mt-3 mb-4">
                     {review.text}
                   </p>
                   <Image
@@ -97,9 +97,9 @@ const Testimonial = () => {
         </Swiper>
 
         <div className="mt-8 sm:mt-5 text-center">
-          <h2 className="text-xl sm:text-4xl font-bold mb-10 sm:mb-20 w-full xl:w-[300px] 2xl:w-[600px]">
+          <h3 className="text-[22px] lg:text-[24px] font-bold mb-10 sm:mb-20 w-full xl:w-[300px] 2xl:w-[600px]">
             1000+ Positive Reviews Reflecting Customer Satisfaction
-          </h2>
+          </h3>
           <div className="flex gap-5 sm:gap-10 justify-center">
             <button
               onClick={() => swiperRef.current?.slidePrev()}

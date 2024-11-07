@@ -41,11 +41,11 @@ const Features = () => {
                 
 
                 <div>
-                    <h2 className='lg:text-4xl text-3xl font-bold mb-5'>OUR <span className='text-red-500'>SERVICES</span></h2>
-                    <p className='w-auto lg:w-1/2 lg:text-2xl text-sm'>Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service</p>
+                    <h2 className='text-[26px] lg:text-[28px] font-bold mb-5'>OUR <span className='text-red-500'>SERVICES</span></h2>
+                    <p className='w-auto lg:w-1/2 text-[14px] lg:text-[16px]'>Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service</p>
                 </div>
 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 mx-auto max-w-[1600px] px-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 mx-auto max-w-[1600px]'>
                     {features.map((feature, index) => (
                         <div
                             key={index}

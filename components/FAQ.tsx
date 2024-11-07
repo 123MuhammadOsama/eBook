@@ -30,11 +30,11 @@ const FAQ = () => {
   };
 
   return (
-    <div className='mx-4 lg:mx-20 space-y-6 lg:space-y-10 mt-20 2xl:mx-36'>
-      <h2 className='font-bold text-3xl lg:text-4xl'>
+    <div className='mx-4 lg:mx-10 space-y-6 lg:space-y-10 mt-20 2xl:mx-36'>
+      <h2 className='font-bold text-[26px] lg:text-[28px]'>
         Frequently <span className='text-red-500'>Questions</span> and Answers
       </h2>
-      <p className='text-lg lg:text-2xl w-[300px] sm:w-[500px] lg:w-[900px]'>
+      <p className='text-[14px] lg:text-[16px] w-[300px] sm:w-[500px] lg:w-[900px]'>
         Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service.
       </p>
 
@@ -50,14 +50,14 @@ const FAQ = () => {
         </div>
 
         {/* FAQ List Section */}
-        <div className="space-y-6 lg:space-y-10 p-4 w-full lg:w-2/3 pt-16">
+        <div className="space-y-6 lg:space-y-10 p-4 w-full lg:w-[400px] xl:w-[700px] 2xl:w-[1500px] pt-16">
           {faqItems.map((item, index) => (
             <div key={index} className="border-b-2 border-black pb-4">
               <div
-                className="flex items-center justify-between cursor-pointer text-xl lg:text-2xl"
+                className="flex items-center justify-between cursor-pointer text-[22px] lg:text-[24px]"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className={`font-medium ${openIndex === index ? 'text-2xl' : ''}`}>
+                <span className={`font-medium ${openIndex === index ? 'text-[22px] lg:text-[24px]' : ''}`}>
                   {formatQuestion(item.question)}
                 </span>
                 {openIndex === index ? (
@@ -67,7 +67,7 @@ const FAQ = () => {
                 )}
               </div>
               {openIndex === index && (
-                <p className="mt-2 text-black">{item.answer}</p>
+                <p className="mt-2 text-black text-[14px] lg:text-[16px]">{item.answer}</p>
               )}
             </div>
           ))}

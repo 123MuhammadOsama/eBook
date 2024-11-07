@@ -6,10 +6,10 @@ const Contact = () => {
     <div className='flex flex-col lg:flex-row bg-black px-8 sm:px-4 lg:px-8 xl:px-32 2xl:px-40 py-10 lg:py-20 2xl:py-24'>
       {/* Text */}
       <div className='lg:py-10 flex-1'>
-        <h2 className='text-white text-4xl font-bold max-w-xl 2xl:text-5xl'>
+        <h2 className='text-white font-bold max-w-xl text-[26px] lg:text-[28px]'>
           Love to Hear From You Get In Touch 👋
         </h2>
-        <p className='text-white text-2xl pt-6 lg:pt-10 2xl:pt-8 2xl:w-[1000px]'>
+        <p className='text-white text-[14px] lg:text-[16px] pt-6 lg:pt-10 2xl:pt-8 2xl:w-[1000px]'>
           Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service.
         </p>
       </div>

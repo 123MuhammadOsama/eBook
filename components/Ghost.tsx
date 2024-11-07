@@ -29,10 +29,10 @@ const Ghost = () => {
   return (
     <div className=" px-4 lg:px-20 xl:px-32 py-10">
       <div className="text-start mb-10">
-        <h2 className="text-2xl lg:text-4xl font-bold mb-2">
+        <h2 className="text-[26px] lg:text-[28px] font-bold mb-2">
           Our eBook Ghostwriting Service Has <span className="text-red-500">Delivered 9000+</span> Orders So Far
         </h2>
-        <p className='lg:text-2xl'>
+        <p className='text-[14px] lg:text-[16px]'>
           Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with our E-book writing Service.
         </p>
       </div>
