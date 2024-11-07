@@ -122,8 +122,10 @@ const Navbar = () => {
           <Link href="/contact" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">Blogs</Link>
 
           <div className='flex gap-5'>
-            <div className='bg-green-500 text-white p-2 rounded-xl'><BsWhatsapp size={26}/></div>
-            <div className='bg-blue-500 text-white p-2 rounded-xl'><Mail size={26}/></div>
+            <Link href="/"><div className='bg-green-500 text-white p-2 rounded-xl'><BsWhatsapp size={26}/></div></Link>
+            <Link href="/"><div className='bg-blue-500 text-white p-2 rounded-xl'><Mail size={26}/></div></Link>
+            
+            
           </div>
         </div>
       </div>
