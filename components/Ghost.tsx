@@ -27,43 +27,44 @@ const images = [
 
 const Ghost = () => {
   return (
-    <div className="mx-auto max-w-5xl py-10">
-      <div className="text-center mb-10">
-        <h1 className="text-2xl font-bold mb-2">
+    <div className=" px-4 lg:px-20 xl:px-32 py-10">
+      <div className="text-start mb-10">
+        <h2 className="text-2xl lg:text-4xl font-bold mb-2">
           Our eBook Ghostwriting Service Has <span className="text-red-500">Delivered 9000+</span> Orders So Far
-        </h1>
-        <p>
+        </h2>
+        <p className='lg:text-2xl'>
           Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with our E-book writing Service.
         </p>
       </div>
 
       <Swiper
-        spaceBetween={10}
-        slidesPerView={5} 
-        loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        modules={[Autoplay, Pagination]}
-        className="relative h-[300px]"
-      >
-        {images.map((image, index) => (
-          <SwiperSlide key={index}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              height={300}
-              width={200}
-              className="transition-all duration-700 ease-linear object-contain"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+  spaceBetween={5}
+  slidesPerView={5}
+  loop={true}
+  autoplay={{
+    delay: 1000,
+    disableOnInteraction: false,
+  }}
+  pagination={{
+    clickable: true,
+    dynamicBullets: true,
+  }}
+  modules={[Autoplay, Pagination]}
+  className="relative h-[200px] md:h-[300px] lg:h-[400px]" 
+>
+  {images.map((image, index) => (
+    <SwiperSlide key={index}>
+      <Image
+        src={image.src}
+        alt={image.alt}
+        height={400} 
+        width={300} 
+        className="transition-all duration-700 ease-linear object-contain"
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
 
       <div className="flex justify-center mt-6">
         <div className="swiper-pagination"></div>

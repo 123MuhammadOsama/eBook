@@ -6,10 +6,10 @@ import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
 type FAQItem = {
     question: string;
     answer: string;
-  };
-  
+};
+
 const faqItems: FAQItem[] = [
-  { question: 'Question 1', answer: 'Answer to question 1 goes here. Answer to question 1 goes here. Answer to question 1 goes here.Answer to question 1 goes here.Answer to question 1 goes here.Answer to question 1 goes here.Answer to question 1 goes here.Answer to question 1 goes here.Answer to question 1 goes here.Answer to question 1 goes here.' },
+  { question: 'Question 1', answer: 'Answer to question 1 goes here...' },
   { question: 'Question 2', answer: 'Answer to question 2 goes here.' },
   { question: 'Question 3', answer: 'Answer to question 3 goes here.' },
   { question: 'Question 4', answer: 'Answer to question 4 goes here.' },
@@ -24,16 +24,23 @@ const FAQ = () => {
   };
 
   const formatQuestion = (question: string) => {
-    return question.replace(/(\d+)/g, '<span class="text-red-500">$1</span>');
+    return question.split(/(\d+)/).map((part, i) =>
+      /\d+/.test(part) ? <span key={i} className="text-red-500">{part}</span> : part
+    );
   };
 
   return (
-    <div className='mx-20 space-y-10'>
-      <h1 className='font-bold text-4xl'>Frequently <span className='text-red-500'>Questions</span> and Answers</h1>
-      <p className='text-xl'>Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service</p>
+    <div className='mx-4 lg:mx-20 space-y-6 lg:space-y-10 mt-20 2xl:mx-36'>
+      <h2 className='font-bold text-3xl lg:text-4xl'>
+        Frequently <span className='text-red-500'>Questions</span> and Answers
+      </h2>
+      <p className='text-lg lg:text-2xl w-[300px] sm:w-[500px] lg:w-[900px]'>
+        Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service.
+      </p>
 
-      <div className='flex gap-10'>
-        <div>
+      <div className='flex flex-col lg:flex-row gap-6 lg:gap-10'>
+        {/* Image Section - Hidden on small screens */}
+        <div className='hidden lg:block'>
           <Image
             src="/faq.png"
             alt='FAQs'
@@ -42,17 +49,17 @@ const FAQ = () => {
           />
         </div>
 
-        <div className="space-y-10 p-4 ml-40 w-2/3">
+        {/* FAQ List Section */}
+        <div className="space-y-6 lg:space-y-10 p-4 w-full lg:w-2/3 pt-16">
           {faqItems.map((item, index) => (
-            <div key={index} className="border-b-2 border-black  pb-4">
+            <div key={index} className="border-b-2 border-black pb-4">
               <div
-                className="flex items-center justify-between cursor-pointer gap-[800px] text-2xl"
+                className="flex items-center justify-between cursor-pointer text-xl lg:text-2xl"
                 onClick={() => toggleFAQ(index)}
               >
-                <span
-                  className={`font-medium ${openIndex === index ? 'text-2xl' : ''}`}
-                  dangerouslySetInnerHTML={{ __html: formatQuestion(item.question) }}
-                />
+                <span className={`font-medium ${openIndex === index ? 'text-2xl' : ''}`}>
+                  {formatQuestion(item.question)}
+                </span>
                 {openIndex === index ? (
                   <FaArrowDown className="text-black" />
                 ) : (

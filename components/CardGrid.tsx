@@ -37,20 +37,12 @@ const Features = () => {
 
     return (
         <>
-            <section className='px-32 py-10 space-y-10'>
-                {/* <div className="flex flex-col items-start space-y-5 text-center">
-                    <span className="text-3xl md:text-5xl font-bold max-w-2xl text-[#083554]">
-                        OUR SERVICES
-                    </span>
-                    <span className="font-light text-2xl md:text-3xl text-black pt-10">
-                        Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service
-                    </span>
-                    <div className='w-20 md:w-40 mt-2 mb-4 border-b-4 md:border-b-8 rounded-md border-[#083554]'></div>
-                </div> */}
+            <section className='px-8 md:px-8 lg:px-10 xl:px-32 py-10 space-y-10'>
+                
 
                 <div>
-                    <h1 className='text-4xl font-bold mb-5'>OUR <span className='text-red-500'>SERVICES</span></h1>
-                    <p className='w-1/2 text-2xl'>Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service</p>
+                    <h2 className='lg:text-4xl text-3xl font-bold mb-5'>OUR <span className='text-red-500'>SERVICES</span></h2>
+                    <p className='w-auto lg:w-1/2 lg:text-2xl text-sm'>Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service</p>
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 mx-auto max-w-[1600px] px-4'>

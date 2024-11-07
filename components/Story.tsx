@@ -11,8 +11,8 @@ const Story = () => {
         className="object-cover"
       />
 
-      <div className="relative z-10 p-10 text-center space-y-5 text-4xl">
-        <h1 className="text-red-500  font-bold">ENTER THE WORLD OF STORYTELLING</h1>
+      <div className="relative z-10 p-10 text-center space-y-5 text-2xl lg:text-4xl">
+        <h2 className="text-red-500  font-bold">ENTER THE WORLD OF STORYTELLING</h2>
         <p className='text-white text-4xl'>Become a writing virtuoso</p>
         <p className='text-white'>
           Call Us 1-254-964-9543

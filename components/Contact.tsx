@@ -1,82 +1,81 @@
-import React from 'react'
+import React from 'react';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
-    <div className='flex bg-black px-32 py-20'>
-      {/* text */}
-      <div>
-        <h1 className='text-white text-4xl font-bold w-[400px]'>Love to Hear From You Get In Touch 👋</h1>
-        <p className='text-white text-2xl pt-20 w-[900px]'>Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service</p>
+    <div className='flex flex-col lg:flex-row bg-black px-8 sm:px-4 lg:px-8 xl:px-32 2xl:px-40 py-10 lg:py-20 2xl:py-24'>
+      {/* Text */}
+      <div className='lg:py-10 flex-1'>
+        <h2 className='text-white text-4xl font-bold max-w-xl 2xl:text-5xl'>
+          Love to Hear From You Get In Touch 👋
+        </h2>
+        <p className='text-white text-2xl pt-6 lg:pt-10 2xl:pt-8 2xl:w-[1000px]'>
+          Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service.
+        </p>
       </div>
 
-      {/* form */}
-      <div className='flex justify-center items-center ml-40 h-[50px] mt-20'>
-        <form>
-          <div className="flex gap-4  mb-6">
-          <div className="relative group w-[500px]">
+      {/* Form */}
+      <div className='flex justify-start items-start lg:justify-center lg:items-center flex-1 mt-4 lg:mt-0 lg:mb-20 2xl:mb-28'>
+        <form className='w-full max-w-lg 2xl:max-w-4xl 2xl:px-12'>
+          <div className="flex flex-col lg:flex-row gap-4 mb-4 2xl:gap-6">
+            <div className="relative group flex-1">
               <input
-                className="w-full bg-transparent text-white border-2 border-white rounded-xl py-3 px-4 hover:border-teal-400 focus:border-teal-400 focus:outline-none transition duration-300 ease-in-out peer"
+                className="w-full bg-transparent text-white border-4 border-white rounded-xl py-3 px-4 2xl:py-5 2xl:px-6 hover:border-teal-400 focus:border-teal-400 focus:outline-none transition duration-300 ease-in-out peer"
                 id="name"
-               type="text"
-               required
-             />
-             <label
-               htmlFor="name"
-               className="absolute left-4 top-3 text-white transition-all duration-300 transform -translate-y-1 scale-100 pointer-events-none peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-black peer-focus:text-teal-400 group-hover:text-teal-400 group-hover:bg-black"
-             >
-               Name
-             </label>
+                type="text"
+                required
+              />
+              <label
+                htmlFor="name"
+                className="absolute left-4 top-3 2xl:left-6 2xl:top-3 text-white transition-all duration-300 transform -translate-y-1 scale-100
+                 pointer-events-none peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-black peer-focus:text-teal-400
+                    group-hover:text-teal-400 group-hover:bg-black"
+              >
+                Name 
+              </label>
             </div>
 
-            <div className="relative group w-[500px]">
+            <div className="relative group flex-1">
               <input
-                className="w-full bg-transparent text-white border-2 border-white rounded-xl py-3 px-4 hover:border-teal-400 focus:border-teal-400 focus:outline-none transition duration-300 ease-in-out peer"
+                className="w-full bg-transparent text-white border-4 border-white rounded-xl py-3 px-4 2xl:py-5 2xl:px-6 hover:border-teal-400 focus:border-teal-400 focus:outline-none transition duration-300 ease-in-out peer"
                 id="phone"
-               type="text"
-               required
-             />
-             <label
-               htmlFor="name"
-               className="absolute left-4 top-3 text-white transition-all duration-300 transform -translate-y-1 scale-100 pointer-events-none peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-black peer-focus:text-teal-400 group-hover:text-teal-400 group-hover:bg-black"
-             >
-               Phone Number
-             </label>
+                type="text"
+                required
+              />
+              <label
+                htmlFor="phone"
+                className="absolute left-4 top-3 2xl:left-6 2xl:top-3 text-white transition-all duration-300 transform -translate-y-1 scale-100 pointer-events-none peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:bg-black peer-focus:text-teal-400 group-hover:text-teal-400 group-hover:bg-black"
+              >
+                Phone Number
+              </label>
             </div>
-
-
-            
-
-            
           </div>
 
-          <div className='mt-20 relative group w-[1020px]'>
+          <div className='mt-8 relative group'>
+            <textarea
+              id="message"
+              name="message"
+              className="w-full py-10 2xl:py-12 bg-transparent text-white border-4 border-white rounded-xl px-4 2xl:px-6
+               hover:border-teal-400 focus:border-teal-400 focus:outline-none transition duration-300 ease-in-out peer"
+              required
+            ></textarea>
+            <label
+              htmlFor="message"
+              className="absolute left-4 top-16 2xl:left-6 2xl:top-30 text-white transition-all duration-300 transform -translate-y-1 scale-100 
+                peer-focus:-translate-y-20 peer-focus:scale-75 peer-focus:text-teal-400 peer-focus:bg-black
+                group-hover:text-teal-400 group-hover:bg-black"
+            >
+              Message
+            </label>
 
-          
-               <textarea
-                 id="message"
-                 name="message"
-                 className="w-full py-10 bg-transparent text-white border-2 border-white rounded-xl px-4 hover:border-teal-400 focus:border-teal-400
-                   focus:outline-none transition duration-300 ease-in-out peer"
-                 required
-               ></textarea>
-               <label
-                 htmlFor="message"
-                 className="absolute left-4 top-16 text-white transition-all duration-300 transform -translate-y-1 scale-100 
-                   peer-focus:-translate-y-20 peer-focus:scale-75 peer-focus:text-teal-400 peer-focus:bg-black
-                   group-hover:text-teal-400 group-hover:bg-black"
-               >
-                 Message
-               </label>
-              </div>
-
-
-          
-
-          
+            <button className='flex text-white text-2xl border-4 border-white rounded-xl mt-8 p-4 2xl:py-6 2xl:px-8 hover:bg-red-500 hover:border-red-500'>
+              REQUEST A CALL <FaArrowRightLong className='ml-2 mt-1' />
+            </button>
+          </div>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

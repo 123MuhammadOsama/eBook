@@ -28,73 +28,74 @@ const slides: Slide[] = [
 
 const Ghostwriting = () => {
   return (
-    <div className='mx-32 pt-20 flex'>
+    <div className='mx-4 sm:mx-8 2xl:mx-32 pt-20 flex'>
       {/* left */}
       <div className='w-[1200px] space-y-8'>
 
-        <h1 className='text-4xl font-bold'>
+        <h2 className='text-4xl font-bold'>
         Hire an <span className='text-red-500'>Affordable Ghostwriting</span> Company to Vanish Your Publishing Problems!
-        </h1>
+        </h2>
         <p className='text-xl'>If you are looking around for the cheapest eBook writers for hiring purposes, put the seal on your search! EBookwritings.com is the cheapest eBook ghostwriting agency offering its high-quality eBook writing services at the lowest prices. Our cheap eBook writing service helps the audience to work with the first-class eBook ghostwriting company, without breaking the bank.</p>
         <p className='text-xl'>To further make the experience memorable for the audience, several lucrative packages are offered by us. These packages empower clients to get their bulk orders completed without spending too much. However, quality is our foremost significant priority, and that is never traded off for low-rate services. When you choose us over other eBook writing firms, you can have full confidence that an excellent value would be delivered to you.</p>
         
-        <h1 className='text-4xl font-bold'>
+        <h2 className='text-4xl font-bold'>
         Leading <span className='text-red-500'>E-book Writing Service</span> in USA That Takes Your Ideas to Next Level
-        </h1>
+        </h2>
         <p className='text-xl'>Our team of pro ghostwriters is sweeping USA by providing efficient eBook writing service across USA, counting Huston, New Jersey, Texas, California, and in all other states of it. Experienced book writing professionals of our agency compose and design winning content while keeping the story and its writer in complete consideration.</p>
         <p className='text-xl'>We pay equal attention to all your details. Be it a selected theme, special additions, or the type of tone you need. Professional ghostwriters of our company can harmonize and pen down each thing accordingly. Apart from this, our team of grammatologists keenly works on cleaning all writing bugs from your book along with accurate formatting.</p>
         
-        <h1 className='text-4xl font-bold'>
+        <h2 className='text-4xl font-bold'>
         Hire an <span className='text-red-500'>Affordable Ghostwriting</span> Company to Vanish Your Publishing Problems!
-        </h1>
+        </h2>
         <p className='text-xl'>If you are looking around for the cheapest eBook writers for hiring purposes, put the seal on your search! EBookwritings.com is the cheapest eBook ghostwriting agency offering its high-quality eBook writing services at the lowest prices. Our cheap eBook writing service helps the audience to work with the first-class eBook ghostwriting company, without breaking the bank.</p>
         <p className='text-xl'>To further make the experience memorable for the audience, several lucrative packages are offered by us. These packages empower clients to get their bulk orders completed without spending too much. However, quality is our foremost significant priority, and that is never traded off for low-rate services. When you choose us over other eBook writing firms, you can have full confidence that an excellent value would be delivered to you.</p>
 
-        <h1 className='text-4xl font-bold'>
+        <h2 className='text-4xl font-bold'>
         Leading <span className='text-red-500'>E-book Writing Service</span> in USA That Takes Your Ideas to Next Level
-        </h1>
+        </h2>
         <p className='text-xl'>Our team of pro ghostwriters is sweeping USA by providing efficient eBook writing service across USA, counting Huston, New Jersey, Texas, California, and in all other states of it. Experienced book writing professionals of our agency compose and design winning content while keeping the story and its writer in complete consideration.</p>
         <p className='text-xl'>We pay equal attention to all your details. Be it a selected theme, special additions, or the type of tone you need. Professional ghostwriters of our company can harmonize and pen down each thing accordingly. Apart from this, our team of grammatologists keenly works on cleaning all writing bugs from your book along with accurate formatting.</p>
 
       </div>
       {/* right */}
-      <div className='h-[1600px] w-[800px] bg-gray-900 rounded-lg ml-32  relative overflow-hidden'>
-      <div className="flex flex-col animate-scroll-vertical h-[200%] space-y-[600px]">
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className="h-64 flex-shrink-0 p-4 text-center"
-          >
-            <Image
-              src={slide.src}
-              alt={slide.title}
-              width={600}
-              height={200}
-              className="rounded-lg mx-auto"
-            />
-            <h2 className="text-2xl font-bold mt-2 text-white">{slide.title}</h2>
-            <p className="text-white text-2xl">{slide.subtitle}</p>
-          </div>
-        ))}
-        {/* Duplicate the slides for continuous scrolling */}
-        {slides.map((slide) => (
-          <div
-            key={`${slide.id}-copy`}
-            className="h-64 flex-shrink-0 p-4 text-center"
-          >
-            <Image
-              src={slide.src}
-              alt={slide.title}
-              width={300}
-              height={200}
-              className="rounded-lg mx-auto"
-            />
-            <h2 className="text-lg font-semibold mt-2">{slide.title}</h2>
-            <p className="text-gray-500">{slide.subtitle}</p>
-          </div>
-        ))}
+<div className='hidden lg:block h-[2350px] xl:h-[1950px] 2xl:h-[1400px] w-[800px] bg-gray-900 rounded-lg ml-10 relative overflow-hidden'>
+  <div className="flex flex-col animate-scroll-vertical h-[200%] space-y-[600px]">
+    {slides.map((slide) => (
+      <div
+        key={slide.id}
+        className="h-64 flex-shrink-0 p-4 text-center"
+      >
+        <Image
+          src={slide.src}
+          alt={slide.title}
+          width={600}
+          height={200}
+          className="rounded-lg mx-auto"
+        />
+        <h2 className="text-2xl font-bold mt-2 text-white">{slide.title}</h2>
+        <p className="text-white text-2xl">{slide.subtitle}</p>
       </div>
+    ))}
+    {/* Duplicate the slides for continuous scrolling */}
+    {slides.map((slide) => (
+      <div
+        key={`${slide.id}-copy`}
+        className="h-64 flex-shrink-0 p-4 text-center"
+      >
+        <Image
+          src={slide.src}
+          alt={slide.title}
+          width={300}
+          height={200}
+          className="rounded-lg mx-auto"
+        />
+        <h2 className="text-lg font-semibold mt-2">{slide.title}</h2>
+        <p className="text-gray-500">{slide.subtitle}</p>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   )
 }
