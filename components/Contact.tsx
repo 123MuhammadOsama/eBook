@@ -10,18 +10,20 @@ const Contact = () => {
       <div className='lg:py-10 flex-1'>
         <h2 className='text-white font-bold max-w-xl text-[26px] lg:text-[28px]'>
           Love to Hear From You Get In Touch <motion.span
-      animate={{
-        rotate: [0, 20, -20, 20, 0],
-      }}
-      transition={{
-        duration: 1.5, 
-        repeat: Infinity, 
-        ease: "easeInOut", 
-      }}
-      style={{ display: "inline-block" }} 
-    >
-      👋
-    </motion.span>
+            animate={{
+              rotate: [-20, 20],
+            }}
+            transition={{
+              duration: 0.5,
+              repeat: Infinity, 
+              repeatType: "reverse",
+              ease: "easeInOut", 
+            }}
+            style={{ display: "inline-block" }}
+          >
+            👋
+          </motion.span>
+
         </h2>
         <p className='text-white text-[14px] lg:text-[16px] pt-6 lg:pt-10 2xl:pt-8 2xl:w-[1000px]'>
           Tap expert writers and a partner who gets modern content marketing. In a sea of sameness, stand out in search with E-book writing Service.

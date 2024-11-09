@@ -46,6 +46,7 @@ const FAQ = () => {
             alt='FAQs'
             height={500}
             width={500}
+            className='bottom-0'
           />
         </div>
 
