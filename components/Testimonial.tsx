@@ -27,7 +27,7 @@ const Testimonial = () => {
     <div className="bg-black w-full px-4 sm:px-10 md:px-20 py-10 relative">
       <div className="bg-red-600 w-[90%] sm:w-[500px] text-white font-bold py-4 sm:py-4 text-center
          mx-auto sm:absolute sm:left-[100px] md:left-[200px] lg:left-[300px]
-        xl:left-[450px] 2xl:left-[900px] sm:top-[-40px] sm:-rotate-6 mb-8 sm:mb-0 2xl:py-8">
+        xl:left-[450px] 2xl:left-[650px] sm:top-[-40px] sm:-rotate-6 mb-8 sm:mb-0 2xl:py-8">
         <h2 className='text-[26px] lg:text-[28px]'>TESTIMONIALS</h2>
       </div>
       <p className="text-white text-center text-base text-[14px] lg:text-[16px] px-4 pt-10 2xl:pt-20 sm:px-24 md:px-20 lg:px-40 2xl:px-[600px]">

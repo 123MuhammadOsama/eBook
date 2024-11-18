@@ -47,14 +47,7 @@ const FourthSection: React.FC = () => {
       </button>
       {/* Center-Aligned Paragraph */}
       <p
-        style={{
-          marginTop: '20px',
-          fontSize: '16px',
-          width: 1121,
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          height: 92,
-        }}
+        className='text-[14px] lg:text-[16px] items-center justify-center text-center'
       >
         Reach out to our team at Britain Bookwriting, and we will ensure to deliver you an excellent, error-free eBook version of your fantastic work. We promise that our low-cost eBooks will excel in quality while staying true to your unique needs.
       </p>
