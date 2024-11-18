@@ -42,11 +42,11 @@ const Navbar = () => {
           <Link href='/'>
             <Image
               src="/logo.png"
-              alt="Business proposal writers"
+              alt="eBook"
               width={200}
               height={100}
               className="object-contain"
-              title='Business proposal writers'
+              title='eBook'
             />
           </Link>
         </div>
@@ -64,9 +64,9 @@ const Navbar = () => {
 
         <div className="hidden md:flex space-x-4 lg:space-x-4 xl:space-x-12">
           <Link href="/about" className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#124680]">About Us</Link>
-          <Link href="/" className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#124680]">Contact Us</Link>
+          <Link href="/contact" className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#124680]">Contact Us</Link>
           <Link href="#" className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#124680]">Services</Link>
-          <Link href="/contact" className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#124680]">Blogs</Link>
+          <Link href="/" className="text-sm lg:text-base xl:text-xl font-medium hover:text-[#124680]">Blogs</Link>
         </div>
 
         {!isSidebarOpen && (
@@ -117,9 +117,9 @@ const Navbar = () => {
             </Link>
           </div>
           <Link href="/about" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">About Us</Link>
-          <Link href="/" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">Contact Us</Link>
+          <Link href="/contact" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">Contact Us</Link>
           <Link href="/" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">Services</Link>
-          <Link href="/contact" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">Blogs</Link>
+          <Link href="/" onClick={() => setIsSidebarOpen(false)} className="text-md lg:text-lg xl:text-xl font-medium hover:text-[#124680]">Blogs</Link>
 
           <div className='flex gap-5'>
             <Link href="/"><div className='bg-green-500 text-white p-2 rounded-xl'><BsWhatsapp size={26}/></div></Link>

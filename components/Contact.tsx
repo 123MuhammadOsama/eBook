@@ -31,7 +31,7 @@ const Contact = () => {
       </div>
 
       {/* Form */}
-      <div className='flex justify-start items-start lg:justify-center lg:items-center flex-1 mt-4 lg:mt-0 lg:mb-20 2xl:mb-28'>
+      <div className='flex justify-start items-start lg:justify-center lg:items-center flex-1 mt-4 lg:mt-0 lg:mb-20 2xl:mb-0'>
         <form className='w-full max-w-lg 2xl:max-w-4xl 2xl:px-12'>
           <div className="flex flex-col lg:flex-row gap-4 mb-4 2xl:gap-6">
             <div className="relative group flex-1">
